@@ -1,40 +1,495 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/solarized.css">
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <section>
+                Projektpräsentation Fachinformatiker für Anwendungsentwicklung
+            </section>
+            <section>
+                <h3>Servicebuddy Teams Integration</h3>
+                <p>Integration von Microsoft Teams in eine Softwarelösung für den digitalen Kundendienst</p>
+            </section>
+            <section>
+                <h2>Gliederung</h2>
+            </section>
+            <section>
+                <ul>
+                    <li><h3>Einleitung</h3>
+                        <ul>
+                            <li><p>Prüfling</p></li>
+                            <li><p>Unternehmen</p></li>
+                            <li><p>Überblick Servicebuddy</p></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li><h3>Planung</h3>
+                        <ul>
+                            <li><p>Projekt & Zeitmanagement</p></li>
+                            <li><p>Arbeitsmittel</p></li>
+                            <li><p>Entwurf</p></li>
+                            <li><p>Design</p></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li><h3>Durchführung</h3>
+                        <ul>
+                            <li><p>Webhook<p></li>
+                            <li><p>App Registrierung</p></li>
+                            <li><p>Datenbank</p></li>
+                            <li><p>Frontend</p></li>
+                            <li><p>Tests</p></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li><h3>Kontrolle & Abschluss</h3>
+                        <ul>
+                            <li>Tests</li>
+                            <li>Code review</li>
+                            <li>Fazit</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li><h3>Dokumentation</h3>
+                        <ul>
+                            <li><p>Obsidian</p></li>
+                            <li><p>Reveal.js</p></li>
+                            <li><p>Methodik</p></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h3>Zum Vortragenden</h3>
+                <div>
+                    <img data-src="Profilbild.png" alt="mein Profilbild" width="250" height="280">
+                </div>
+                <ul>
+                    <li>Jo Luca Piene</li>
+                    <li>Wohnort Münster</li>
+                    <li>Geb. 17.07.1993</li>
+                    <li>Mathematikstudium kein Abschluss</li>
+                    <li>Auszubildender als "FIAE"</li>
+                </ul>
+            </section>
+            <section data-background-image="SQ.jpeg" data-background-opacity="0.2">
+                <h2>Vorstellung des Unternehmens</h2>
+            </section>
+            <section>
+                <img data-src="smartsquare-logo.svg" alt="SmartsquareGmbH" width="450">
+                <ul>
+                    <li>Sitz in Bielefeld</li>
+                    <li>2 Geschäftsführer</li>
+                    <li>z.Z. 16 Entwickler</li>
+                    <li>IIoT/Digitalisierung 4.0</li>
+                </ul>
+                <aside class="notes">
+                    Die intelligente Vernetzung von Mensch, Organisation & Produktion.
+                    Maschinen und Geräte sollen intelligenter werden, miteinander kommunizieren, Abläufe verbessern
+                </aside>
+            </section>
+            <section>
+                <img data-src="sblogo.svg" alt="servicebuddy-logo" width="666" height="214">
+                <ul>
+                    <li>Leitstand</li>
+                    <li>Störmeldungen</li>
+                    <li>Service-App</li>
+                    <li>Kundenbereich</li>
+                    <li>Datenanalyse</li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h2>Planung & Organisation</h2>
+            </section>
+            <section>
+                <h2>Arbeitsmittel</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Hardware</th>
+                            <th>Software</th>
+                            <th>IDE</th>
+                            <th>Personal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MacBook Pro</td>
+                            <td>MacOS Ventura 13.2.1</td>
+                            <td>Intellij</td>
+                            <td>Auszubildender - Projektdurchführung</td>
+                        </tr>
+                        <tr>
+                            <td>Monitor</td>
+                            <td>Pages</td>
+                            <td></td>
+                            <td>Ausbilder - Codereview</td>
+                        </tr>
+                        <tr>
+                            <td>Schreibtisch</td>
+                            <td>Obsidian</td>
+                            <td></td>
+                            <td>Ausbilder - Projektabnahme</td>
+                        </tr>
+                        <tr>
+                            <td>Bürostuhl</td>
+                            <td>PlantUML</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section data-background-image="Zeiten.png" data-background-size="contain">
+            </section>
+            <section>
+                <h2>user stories</h2>
+                <img src="TeamsUserStories.png" height="560">
+            </section>
+        </section>
+        <section>
+            <section>
+                <h2>Durchführung</h2>
+                <ol>
+                    <li>
+                        <h4>Webhook</h4>
+                        - Nutzer Anleitung<br>
+                        - Speichern & Aktivieren
+                    </li><br>
+                    <li>
+                        <h4>Anbindung</h4>
+                        - Service- & Störmeldung senden<br>
+                        - Format an Teams anpassen
+                    </li>
+                </ol>
+            </section>
+            <section>
+                <h2>Design</h2>
+                <img src="TeamsMockup_1.2.png" height="350" width="350">
+                <img src="TeamsMockup2.png" height="350" width="350">
+            </section>
+            <section data-auto-animate>
+                <h3 data-id="code-title">Frontend</h3>
+                <pre data-id="code-animation">
+                    <code class="hljs javascript" data-trim data-line-numbers="|11-22|32|36-38, 42-47">
+                    <script type="text/template">
+<v-dialog v-model="showTeamsDialog" max-width="800px">
+  <v-card>
+    <v-card-title>
+      {{ $t("teams.configTitle") }}
+    </v-card-title>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+    <v-card-subtitle>
+      {{ $t("teams.configInfo") }}
+    </v-card-subtitle>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+    <v-card-text>
+      {{ $t("teams.instructions.1") }}
+      <br/>
+      {{ $t("teams.instructions.2") }}
+      <br/>
+      {{ $t("teams.instructions.3") }}
+      <br/>
+      {{ $t("teams.instructions.4") }}
+      <br/>
+      {{ $t("teams.instructions.5") }}
+      <br/>
+    </v-card-text>
+
+    <v-spacer/>
+
+    <v-card-text>
+      {{ $t("teams.instructions.linkInfo") }}
+      <a>{{ $t("teams.instructions.link") }}</a>
+    </v-card-text>
+    <v-row>
+      <v-col cols="6">
+        <v-text-field v-model="webhook" label="Webhook-URL" outlined class="mx-6"/>
+      </v-col>
+
+      <v-col cols="2">
+        <v-btn class="pa-2 ma-2 mr-16" elevation="0" @click="saveWebhook()">
+          {{ $t("general.save") }}
+        </v-btn>
+      </v-col>
+
+      <v-col cols="4">
+        <v-switch
+                v-model="teamsActive"
+                :label="$t('teams.active')"
+                class="pa-2 ma-2"
+                @change="activateWebhook"
+        />
+      </v-col>
+    </v-row>
+  </v-card>
+</v-dialog>
+                    </script></code></pre>
+                <aside class="notes">
+                    1. Info erstellung eines webhooks. 2. webhook eingabefeld. 3.save btn & aktivierungs switch
+                </aside>
+            </section>
+            <section data-auto-animate>
+                <h2 data-id="code-animation">Entity/Controller/Repository</h2>
+
+                <pre data-id="code-animation">
+                    <code class="language-java" data-trim>
+                        <script type="text/template">
+@Entity
+@Table(name = "webhook")
+data class WebhookEntity(
+    @Id
+    var id: UUID = UUID.randomUUID(),
+    var webhook: String,
+    var active: Boolean
+)
+                        </script>
+                    </code>
+                </pre>
+                <pre data-id="code-animation">
+                    <code class="language-java" data-trim >
+                        <script type="text/template">
+@RestController
+@RequestMapping("/api/teams/")
+class WebhookController(private val webhookRepository: WebhookRepository) {
+
+    @PostMapping("/webhook")
+    @PreAuthorize("hasRole('${Role.ROLE_MANUFACTURER_ADMIN}')")
+    fun saveWebhook(@RequestBody teamsWebhook: String) {
+        webhookRepository.save(WebhookEntity(webhook = teamsWebhook, active = true))
+    }
+                        </script>
+                    </code>
+                </pre>
+                <aside class="notes">
+
+                </aside>
+            </section>
+
+            <section>
+                <h3 data-id="code-title">Datenbankeintrag & Testdaten</h3>
+                <pre data-id="code-animation">
+            <code class="hljs sql" data-trim data-line-numbers="1-6|8-9">
+            <script type="text/template">
+CREATE TABLE webhook
+(
+id  UUID NOT NULL PRIMARY KEY,
+webhook varchar(1024),
+active boolean
+);
+
+INSERT INTO webhook (id, webhook, active)
+VALUES('9e51210a-c675-11ed-afa1-0242ac120002', 'https://smartsquare.webhook.office.com/webhookb2/d8
+                    </script></code></pre>
+                <aside class="notes">
+
+                </aside>
+            </section>
+            <section data-background-image="TeamsMenue.png" data-background-size="60%">
+
+            </section>
+            <section data-background-image="TeamsDialog.png" data-background-size="80%">
+
+            </section>
+        </section>
+
+        <section>
+            <section data-auto-animate>
+                <h3 data-id="code-title">TeamsRequest</h3>
+                <pre data-id="code-animation">
+                <code class="language-java" data-trim data-line-numbers="|2-8|11|12|14-20">
+                    <script type="text/template">
+data class TeamsMessage(
+    val summary: String,
+    val title: String,
+    val subtitle: String,
+    val author: String,
+    val date: String,
+    val status: String,
+    val message: String
+) {
+
+companion object {
+    fun fromTicketPushEvent(pushEvent: PushEvent, user: UserEntity): TeamsMessage {
+        return TeamsMessage(
+            summary = pushEvent.topic,
+            title = requireNotNull(pushEvent.data["ticketTopic"]),
+            subtitle = pushEvent.title,
+            author = user.email,
+            date = requireNotNull(pushEvent.data["creation"]),
+            status = requireNotNull(pushEvent.data["ticketTopic"]),
+            message = pushEvent.body
+        )
+    }}
+                    </script>
+                </code>
+                </pre>
+                <aside class="notes">
+                    untersch. methoden für alle pushEvents
+                    1) dataclass zum  halten der informationen.
+                    2) kotlin companion object als factoryMethode nimmt pushEvent und user entgegen um informationen zu füllen
+                </aside>
+            </section>
+            <section data-auto-animate>
+                <h3 data-id="code-title">Serialize Methode</h3>
+                <pre data-id="code-animation">
+                <code class="language-java" data-trim data-line-numbers="|1|4-7|8-11|12-15|16-20|21-24|29-31">
+                    <script type="text/template">
+private fun serialize(data: TeamsMessage): String {
+    val request = TeamsRequest(
+    summary = data.summary,
+        sections = listOf(
+        TeamsRequest.Section(
+            activityTitle = data.title,
+            activitySubtitle = data.subtitle,
+            facts = listOf(
+                TeamsRequest.Section.Fact(
+                    name = "Erstellt von:",
+                    value = data.author
+                ),
+                TeamsRequest.Section.Fact(
+                    name = "Datum:",
+                    value = data.date
+                ),
+                TeamsRequest.Section.Fact(
+                    name = "Status:",
+                    value = data.status
+                ),
+                TeamsRequest.Section.Fact(
+                    name = "Info:",
+                    value = data.message
+                ),
+        )
+    )
+)
+)
+    val objectMapper = jacksonObjectMapper().findAndRegisterModules()
+
+    return objectMapper.writeValueAsString(request)
+}
+            </script></code></pre>
+                <aside class="notes">
+                    Konvertieren der Daten zum JSON-string in der form des Card Typs für Teams
+                </aside>
+            </section>
+
+            <section data-auto-animate>
+                <h2 data-id="code-title">Abschicken</h2>
+                <pre data-id="code-animation"><code class="language-java" data-trim data-line-numbers="|1|10|11">
+            <script type="text/template">
+fun sendWithWebhook(pushEvent: PushEvent, user: UserEntity) {
+    val webhook = webhookRepository.findAll().firstOrNull()
+        ?: error("No webhook found!")
+    if (webhook.active) {
+        val url: String = webhook.webhook
+        val headers = HttpHeaders()
+        headers.contentType = MediaType.APPLICATION_JSON
+        val requestEntity = HttpEntity(setNotificationType(pushEvent, user), headers)
+        try {
+            restTemplate.postForEntity(URI(url), requestEntity, String::class.java)
+        } catch (e: Exception) {
+            ResponseEntity.badRequest().body(e.message)
+    }
+}
+            </script></code></pre>
+            </section>
+            <section>
+                <h2>Erfolge</h2>
+                <img src="TeamsNachricht.png">
+                <p>Test: Statusänderung eines Tickets</p>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h2>Qualitätssicherung</h2>
+            </section>
+            <section data-auto-animate>
+                <h2 data-id="code-title">Entwickler Dokumentation</h2>
+                <pre data-id="code-animation"><code class="language-java">
+            <script type="text/template">
+/**
+* Uses a webhook to send notifications into Teams channel
+* @param pushEvent and
+* @param user constructs the desired message for the serialize method
+*/
+            </script></code></pre>
+                <aside class="notes">
+                    Clean code anstelle von Dokumentation. Ausführende Funktionen werden ergänzt.
+                </aside>
+            </section>
+            <section>
+                <h2>Methodik</h2>
+                <ul>
+                    <li>Scrumban</li>
+                    <li>Linting/Codequality</li>
+                    <li>CI/CD-pipeline</li>
+                    <li>CleanCode</li>
+                </ul>
+            </section>
+        </section>
+    </div>
+</div>
+
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        hash: true,
+        multiplex: {
+            secret: '16838179855914109749',
+            id: '04086503d4acbc67',
+            url: '192.168.0.38:8000'
+        },
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [
+            RevealMarkdown,
+            RevealHighlight,
+            RevealNotes,
+            // Multiplex plugin
+            { src: 'https://reveal-multiplex.glitch.me/socket.io/socket.io.js', async: true },
+            { src: 'https://reveal-multiplex.glitch.me/master.js', async: true },
+            // speaker notes
+            { src: 'https://unpkg.com/reveal-notes-server/client.js', async: true },
+            // remote control
+            { src: 'http://localhost:3001/socket.io/socket.io.js', async: true },
+            { src: 'plugins/remote-control/remote.js', async: true }
+        ]
+    });
+</script>
+</body>
 </html>
