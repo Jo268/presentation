@@ -19,10 +19,18 @@
         <section>
             <section>
                 Projektpräsentation Fachinformatiker für Anwendungsentwicklung
+                <aside class="notes">
+                    Verzeihen sie mir bitte eine unordentliche <br>
+                    Trennung von 'En' & 'De' im Vortrag<br>
+                    Ich versuche Konsistent zu bleiben
+                </aside>
             </section>
             <section>
                 <h3>Servicebuddy Teams Integration</h3>
                 <p>Integration von Microsoft Teams in eine Softwarelösung für den digitalen Kundendienst</p>
+                <aside class="notes">
+                    Die Software Servicebuddy soll Maschinen Benachrichtigungen in einen Teams Kanal senden können.
+                </aside>
             </section>
             <section>
                 <h2>Gliederung</h2>
@@ -55,7 +63,6 @@
                     <li><h3>Durchführung</h3>
                         <ul>
                             <li><p>Webhook<p></li>
-                            <li><p>App Registrierung</p></li>
                             <li><p>Datenbank</p></li>
                             <li><p>Frontend</p></li>
                             <li><p>Tests</p></li>
@@ -94,11 +101,17 @@
                 </div>
                 <ul>
                     <li>Jo Luca Piene</li>
-                    <li>Wohnort Münster</li>
                     <li>Geb. 17.07.1993</li>
-                    <li>Mathematikstudium kein Abschluss</li>
+                    <li>in Münster</li>
                     <li>Auszubildender als "FIAE"</li>
                 </ul>
+
+                <aside class="notes">
+                    masematte-> <br>
+                    Für mich ist es schwierig die Gegenstände meiner Alltagsarbeit nicht als selbstverständlich zu präsentieren.<br>
+                    Auf der anderen seite möchte ich mich auch nicht in Details verlieren <br>
+                    Ich probiere das projekt und sein Umfeld so Naiv wie möglich zu beschreiben.
+                </aside>
             </section>
             <section data-background-image="SQ.jpeg" data-background-opacity="0.2">
                 <h2>Vorstellung des Unternehmens</h2>
@@ -112,7 +125,7 @@
                     <li>IIoT/Digitalisierung 4.0</li>
                 </ul>
                 <aside class="notes">
-                    Die intelligente Vernetzung von Mensch, Organisation & Produktion.
+                    Die intelligente Vernetzung von Mensch, Organisation & Produktion.<br>
                     Maschinen und Geräte sollen intelligenter werden, miteinander kommunizieren, Abläufe verbessern
                 </aside>
             </section>
@@ -138,7 +151,7 @@
                         <tr>
                             <th>Hardware</th>
                             <th>Software</th>
-                            <th>IDE</th>
+                            <th>Umgebung</th>
                             <th>Personal</th>
                         </tr>
                     </thead>
@@ -152,13 +165,13 @@
                         <tr>
                             <td>Monitor</td>
                             <td>Pages</td>
-                            <td></td>
+                            <td>Spring Boot</td>
                             <td>Ausbilder - Codereview</td>
                         </tr>
                         <tr>
                             <td>Schreibtisch</td>
                             <td>Obsidian</td>
-                            <td></td>
+                            <td>Vue.js</td>
                             <td>Ausbilder - Projektabnahme</td>
                         </tr>
                         <tr>
@@ -170,31 +183,52 @@
                     </tbody>
                 </table>
             </section>
+            <section data-background-image="austausch.png" data-background-size="contain" data-background-opacity="0.2">
+                <h2>Analyse von Arbeitsumfang und Auftragsziel</h2>
+                <p>Das Gespräch mit dem Projektleiter</p>
+            </section>
             <section data-background-image="Zeiten.png" data-background-size="contain"></section>
-
-            <section data-background-image="context.png" data-background-size="contain"></section>
-
-            <section data-background-transition="zoom-in fade-out" data-background-image="container.png" data-background-size="contain"></section>
-
-            <section data-background-transition="fade-in zoom-out" data-background-image="container_mark.png" data-background-size="contain"></section>
-
-            <section data-background-transition="zoom" data-background-image="Teams_Component_Diagram.png" data-background-size="contain">
+            <section data-background-image="kanban.png" data-background-size="contain" data-background-opacity="0.7654321">
+                <h2 style="color:whitesmoke">Anforderungen</h2>
+                <p style="color:whitesmoke">Einteilen des Epics in User Stories</p>
+            </section>
+            <section>
+                <h2>user stories</h2>
+                <img src="TeamsUserStories.png" alt="Teams User Stories" height="560">
                 <aside class="notes">
-                    Das Klassendiagram überspringen, da keine komplexe Struktur. sollte durch die präsi deutlich werden
+                    Auszug der anfangs erstellten User stories. Wurden ergänzt um zB.: <br>
+                    DB-Eintrag,<br>
+                    UI-design,<br>
+                    i18n &
                 </aside>
             </section>
 
-            <section>
-                <h2>user stories</h2>
-                <img src="TeamsUserStories.png" height="560">
+            <section data-background-image="context.png" data-background-size="contain" data-background-color="white"></section>
+
+            <section data-background-transition="zoom-in fade-out" data-background-image="container.png" data-background-size="contain" data-background-color="white"></section>
+
+            <section data-background-transition="fade-in zoom-out" data-background-image="container_mark.png" data-background-size="contain" data-background-color="white"></section>
+
+            <section data-background-transition="zoom" data-background-image="Teams_Component_Diagram.png" data-background-size="contain" data-background-color="white">
+
+
+                <aside class="notes">
+                    Emails werden per smtp zum -> <br>
+                     - abrufen = POP3 (Post Office Protocol Version 3), <br>
+                     - versendet = IMAP Internet Message Access Protocol<br>
+                    Das Klassen Diagram überspringen, da keine komplexe Struktur. sollte durch die präsi deutlich werden
+                </aside>
             </section>
+
         </section>
+
         <section>
             <section>
                 <h2>Durchführung</h2>
                 <ol>
                     <li>
                         <h4>Webhook</h4>
+                        - App Registrierung<br>
                         - Nutzer Anleitung<br>
                         - Speichern & Aktivieren
                     </li><br>
@@ -207,8 +241,13 @@
             </section>
             <section>
                 <h2>Design</h2>
-                <img src="TeamsMockup_1.2.png" height="350" width="350">
-                <img src="TeamsMockup2.png" height="350" width="350">
+                <img src="TeamsMockup_1.2.png" height="350" alt="MockupNr1" width="350">
+                <img src="TeamsMockup2.png" height="350" alt="MockupNr2" width="350">
+                <aside class="notes">
+                    - low-fidelity MockUps<br>
+                    - Karte zum öffnen des Dialogs<br>
+                    - Dialog mit Infos
+                </aside>
             </section>
             <section data-auto-animate>
                 <h3 data-id="code-title">Frontend</h3>
@@ -268,7 +307,8 @@
 </v-dialog>
                     </script></code></pre>
                 <aside class="notes">
-                    1. Info erstellung eines webhooks. 2. webhook eingabefeld. 3.save btn & aktivierungs switch
+                    1. Info erstellung eines webhooks. <br>
+                    2. webhook eingabefeld. 3.save btn & aktivierungs switch
                 </aside>
             </section>
             <section data-auto-animate>
@@ -304,7 +344,29 @@ class WebhookController(private val webhookRepository: WebhookRepository) {
                     </code>
                 </pre>
                 <aside class="notes">
+                    1.) Pfadbeschreibung <br> 2.) @Annotation für die DB Zuordnung  <br>3.) URL für den API Zugrif<br>
+                    4.) @PreAuthorize Nur manufacturer darf speichern
+                </aside>
+            </section>
 
+            <section>
+                <h2>Übersetzung</h2>
+                <pre data-id="code-animation">
+                    <code class="hljs javascript"><script type="text/template">
+
+"instructions": {
+    "1": "1.) Öffne Microsoft Teams und gehe zu dem Kanal, für den du einen Webhook erstellen möchtest.",
+    "2": "2.) Klicke auf das Symbol \"...\" neben dem Kanalnamen und wähle \"Verbinden\" aus dem Dropdown-Menü aus.",
+    "3": "3.) Wähle \"Webhook\" aus der Liste der Optionen.",
+    "4": "4.) Gib dem Webhook einen Namen und optional eine Beschreibung. Klicke auf \"Erstellen\".",
+    "5": "5.) Kopiere den generierten Webhook-URL in das untere Feld und speichere ihn.",
+    "linkInfo": "Genauere Informationen zum erstellen eines Webhook-URL finden sie unter folgendem link:",
+    "link": "https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook?tabs=dotnet#create-an-incoming-webhook-1"
+}
+                </script></code></pre>
+                <aside class="notes">
+                    1. bisher nur Deutsche "Übersetzung" aus einem JSON file<br>
+                    zugriff geschieht mit einem this.$t{'thema.punkt.unterpunkt'}
                 </aside>
             </section>
 
@@ -337,7 +399,7 @@ VALUES('9e51210a-c675-11ed-afa1-0242ac120002', 'https://smartsquare.webhook.offi
 
         <section>
             <section data-auto-animate>
-                <h3 data-id="code-title">TeamsRequest</h3>
+                <h3 data-id="code-title">TeamsMessage</h3>
                 <pre data-id="code-animation">
                 <code class="language-java" data-trim data-line-numbers="|2-8|11|12|14-20">
                     <script type="text/template">
@@ -367,8 +429,8 @@ companion object {
                 </code>
                 </pre>
                 <aside class="notes">
-                    untersch. methoden für alle pushEvents
-                    1) dataclass zum  halten der informationen.
+                    unterschiedliche Methoden für alle pushEvents<br>
+                    1) dataclass zum  halten der informationen.<br>
                     2) kotlin companion object als factoryMethode nimmt pushEvent und user entgegen um informationen zu füllen
                 </aside>
             </section>
@@ -417,7 +479,7 @@ private fun serialize(data: TeamsMessage): String {
 
             <section data-auto-animate>
                 <h2 data-id="code-title">Abschicken</h2>
-                <pre data-id="code-animation"><code class="language-java" data-trim data-line-numbers="|1|10|11">
+                <pre data-id="code-animation"><code class="language-java" data-trim data-line-numbers="|1|5-8|10|11">
             <script type="text/template">
 fun sendWithWebhook(pushEvent: PushEvent, user: UserEntity) {
     val webhook = webhookRepository.findAll().firstOrNull()
@@ -434,11 +496,21 @@ fun sendWithWebhook(pushEvent: PushEvent, user: UserEntity) {
     }
 }
             </script></code></pre>
+                <aside class="notes">
+                    nimmt event & User entgegen<br>
+                    Wenn aktiv wird der Header gesetzt<br>
+
+                </aside>
             </section>
             <section>
                 <h2>Erfolge</h2>
                 <img src="TeamsNachricht.png">
                 <p>Test: Statusänderung eines Tickets</p>
+            </section>
+            <section>
+                <h2>Anpassungen</h2>
+                <img src="TeamsNachricht2.png">
+                <p>Logo, Farbe & Avatar</p>
             </section>
         </section>
         <section>
@@ -456,7 +528,9 @@ fun sendWithWebhook(pushEvent: PushEvent, user: UserEntity) {
 */
             </script></code></pre>
                 <aside class="notes">
-                    Clean code anstelle von Dokumentation. Ausführende Funktionen werden ergänzt.
+                    Selbstbeschreibender Code anstelle von Dokumentation.<br>
+                    Ausführende Funktionen werden ergänzt.<br>
+                    Webhook erklärungen in die Globale Projekt Readme sowie für das Backend.
                 </aside>
             </section>
             <section>
@@ -482,24 +556,24 @@ fun sendWithWebhook(pushEvent: PushEvent, user: UserEntity) {
     // - https://revealjs.com/config/
     Reveal.initialize({
         hash: true,
+        controls: false,
+        touch: false,
+        keyboard: false,
+        transition: 'fade',
         multiplex: {
-            secret: '16838179855914109749',
-            id: '04086503d4acbc67',
-            url: '192.168.0.38:8000'
+            secret: null,
+            id: 'f779f67225653b9f',
+            url: 'https://reveal-multiplex.glitch.me/'
         },
+        dependencies: [
+            { src: 'https://reveal-multiplex.glitch.me/socket.io/socket.io.js', async: true },
+            { src: 'https://reveal-multiplex.glitch.me/client.js', async: true }
+        ],
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [
             RevealMarkdown,
             RevealHighlight,
-            RevealNotes,
-            // Multiplex plugin
-            { src: 'https://reveal-multiplex.glitch.me/socket.io/socket.io.js', async: true },
-            { src: 'https://reveal-multiplex.glitch.me/master.js', async: true },
-            // speaker notes
-            { src: 'https://unpkg.com/reveal-notes-server/client.js', async: true },
-            // remote control
-            { src: 'http://localhost:3001/socket.io/socket.io.js', async: true },
-            { src: 'plugins/remote-control/remote.js', async: true }
+            RevealNotes
         ]
     });
 </script>
